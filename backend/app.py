@@ -6,9 +6,18 @@ app = Flask(__name__)
 # Enable CORS for all routes
 CORS(app)
 
-@app.route("/api/hello")
-def hello():
-    return jsonify({"message": "Hello from Flask!"})
+
+@app.route("/")
+def home():
+    return "Welcome to the Flask Home Page!"
+
+@app.route("/about")
+def about():
+    return "This is the Flask About Page."
+
+@app.route("/contact")
+def contact():
+    return "Contact page from Flask."
 
 if __name__ == "__main__":
     app.run(port=5000, debug=True)
