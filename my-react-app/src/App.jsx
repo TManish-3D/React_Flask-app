@@ -1,6 +1,6 @@
 function App() {
   const goToFlask = () => {
-    window.location.href = "http://localhost:5000/hello";
+    window.location.href = "http://localhost:5000/api/hello";
   };
 
   return (
